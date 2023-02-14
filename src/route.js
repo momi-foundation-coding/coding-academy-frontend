@@ -1,7 +1,5 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Root from './routes/root.js'
-import Curriculum from './routes/curriculum.js'
 import {
   LoginScreen,
   SoftwareScreen,
@@ -10,7 +8,9 @@ import {
   RegisterSoftware,
   FootballClubs,
   FootballClub,
-  BlogScreen
+  BlogScreen,
+  Curriculum,
+  HomeScreen
 } from './containers'
 
 const MainRouters = () => {
@@ -19,7 +19,7 @@ const MainRouters = () => {
       <Route 
         exact
         path="/"
-        element={<Root />}
+        element={<HomeScreen />}
       />
       <Route 
         exact
