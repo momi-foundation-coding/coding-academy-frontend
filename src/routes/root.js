@@ -4,6 +4,6 @@ const Root = () => {
   return (
     <HomeScreen />
   );
-}
+};
 
 export default Root;
