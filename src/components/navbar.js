@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { images } from '../assets';
 
 const NavBar = () => {
@@ -12,19 +13,23 @@ const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item align-items-center px-2">
-              <img 
-                className='rounded-circle'
-                src={images.logo}
-                alt=''
-                width={40}
-                height={40}
-              />
+              <Link to="/">
+                <img 
+                  className='rounded-circle'
+                  src={images.logo}
+                  alt=''
+                  width={40}
+                  height={40}
+                />
+              </Link>
             </li>
             <li className="nav-item">
-              <div className="nav-link active" aria-current="page">About</div>
+              <div className="nav-link active" aria-current="page" role="button">About</div>
             </li>
             <li className="nav-item">
-              <div className="nav-link active">Sports</div>
+              <Link to="/sports">
+                <div className="nav-link active" aria-current="page" role="button">Sports</div>
+              </Link>
             </li>
             <li class="nav-item dropdown">
               <div
@@ -48,7 +53,12 @@ const NavBar = () => {
               </ul>
             </li>
             <li className="nav-item">
-              <div className="nav-link active">Education</div>
+              <div className="nav-link active" role="button">Education</div>
+            </li>
+            <li className="nav-item">
+              <Link to="/software">
+                <div className="nav-link active" aria-current="page" role="button">Software</div>
+              </Link>
             </li>
           </ul>
           <form className="d-flex" role="search">

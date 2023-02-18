@@ -1,5 +1,6 @@
 import React from 'react'
 import { BsCode, BsBicycle, BsBook } from "react-icons/bs";
+import { Link } from 'react-router-dom';
 
 const Featured = () => {
   return (
@@ -13,7 +14,7 @@ const Featured = () => {
           <div>
             <h3 class="fs-2">Software Development</h3>
             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            <button className='btn btn-success'>Learn More</button>
+            <Link className='btn btn-success' to="/software">Learn More</Link>
           </div>
         </div>
         <div class="col d-flex align-items-start">
@@ -23,7 +24,7 @@ const Featured = () => {
           <div>
             <h3 class="fs-2">Sports</h3>
             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            <button className='btn btn-success'>Learn More</button>
+            <Link className='btn btn-success' to="/sports">Learn More</Link>
           </div>
         </div>
         <div class="col d-flex align-items-start">
