@@ -12,7 +12,7 @@ const assets = [
 
 const CarouselItem = ({ images }) => {
   return (
-    <div class="carousel-item active">
+    <div class="carousel-item">
       <div class="row">
         {
           images.map((image, index) => {
@@ -43,11 +43,26 @@ const Gallery = () => {
       <h1 class="pb-2 d-flex justify-content-center text-decoration-underline">Gallery</h1>
       <div class="col-12">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
+          <div class="carousel-inner active">
+            <div class="carousel-item active">
+              <div class="row">
+                {
+                  imagesInGroups[0].map((image, index) => {
+                    return (
+                      <div class="col-md-4 mb-3" key={`${index}`}>
+                        <div class="card">
+                          <img src={image} class="d-block w-100" alt="..." />
+                        </div>
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
             {
-              imagesInGroups.map(group => {
+              imagesInGroups.map((group, index) => {
                 return (
-                  <CarouselItem images={group} />
+                  <CarouselItem images={group} index={index}/>
                 )
               })
             }
