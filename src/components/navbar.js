@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        {/* <a class="navbar-brand" href="#">Navbar</a> */}
+        {/* <div class="navbar-brand" href="#">Navbar</div> */}
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,14 +36,14 @@ const NavBar = () => {
               </div>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item">Software</a>
+                  <div className="dropdown-item">Software</div>
                 </li>
                 <li>
-                  <a className="dropdown-item">Project Management</a>
+                  <div className="dropdown-item">Project Management</div>
                 </li>
                 <li><hr className="dropdown-divider" /></li>
                 <li>
-                  <a className="dropdown-item">Software</a>
+                  <div className="dropdown-item">Software</div>
                 </li>
               </ul>
             </li>
