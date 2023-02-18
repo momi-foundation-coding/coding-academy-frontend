@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { images } from '../../assets'
 import Footer from '../../components/footer'
 import NavBar from '../../components/navbar'
@@ -35,7 +36,14 @@ const LoginScreen = () => {
               <input type="checkbox" value="remember-me" /> Remember me
             </label>
           </div>
-          <button className="w-50 btn btn-lg btn-success" type="submit">Sign in</button>
+          <Link to="/dashboard">
+            <button
+              className="w-50 btn btn-lg btn-success"
+              type="submit"
+            >
+              Sign in
+            </button>
+          </Link>
         </form>
       </div>
       <Footer />
