@@ -2,7 +2,12 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Root from './routes/root.js'
 import Curriculum from './routes/curriculum.js'
-import { LoginScreen, SoftwareScreen } from './containers'
+import {
+  LoginScreen,
+  SoftwareScreen,
+  DashboardScreen,
+  SportsScreen
+} from './containers'
 
 const MainRouters = () => {
   return (
@@ -26,6 +31,16 @@ const MainRouters = () => {
         exact
         path="/login"
         element={<LoginScreen />}
+      />
+      <Route 
+        exact
+        path="/dashboard"
+        element={<DashboardScreen />}
+      />
+      <Route 
+        exact
+        path="/sports"
+        element={<SportsScreen />}
       />
     </Routes>
   )
