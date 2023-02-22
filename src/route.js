@@ -5,7 +5,8 @@ import Curriculum from './routes/curriculum.js'
 import {
   LoginScreen,
   SoftwareScreen,
-  DashboardScreen
+  DashboardScreen,
+  SportsScreen
 } from './containers'
 
 const MainRouters = () => {
@@ -35,6 +36,11 @@ const MainRouters = () => {
         exact
         path="/dashboard"
         element={<DashboardScreen />}
+      />
+      <Route 
+        exact
+        path="/sports"
+        element={<SportsScreen />}
       />
     </Routes>
   )
