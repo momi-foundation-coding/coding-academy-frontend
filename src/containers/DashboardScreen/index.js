@@ -1,5 +1,6 @@
 import React from 'react'
-import { BsCode, BsBicycle, BsHouse } from "react-icons/bs";
+// import { BsCode, BsBicycle, BsHouse } from "react-icons/bs";
+import { BsHouse } from "react-icons/bs";
 
 const DashboardScreen = () => {
   return (
