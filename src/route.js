@@ -6,7 +6,8 @@ import {
   LoginScreen,
   SoftwareScreen,
   DashboardScreen,
-  SportsScreen
+  SportsScreen,
+  RegisterSoftware
 } from './containers'
 
 const MainRouters = () => {
@@ -21,6 +22,11 @@ const MainRouters = () => {
         exact
         path="/software"
         element={<SoftwareScreen />}
+      />
+      <Route 
+        exact
+        path="/register-software"
+        element={<RegisterSoftware />}
       />
       <Route 
         exact
