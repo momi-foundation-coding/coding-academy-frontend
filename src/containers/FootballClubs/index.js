@@ -18,7 +18,7 @@ const FootballClubs = () => {
           <div className="col-md-5 offset-md-1 mb-3">
             <form>
               <div className="d-flex flex-column flex-sm-row w-100 gap-2 align-items-center">
-                <label for="newsletter1" className="visually-hidden">Search</label>
+                <label htmlFor="newsletter1" className="visually-hidden">Search</label>
                 <input id="newsletter1" type="text" className="form-control" placeholder="Search" />
                 <BsSearch size={25} />
               </div>
@@ -30,15 +30,26 @@ const FootballClubs = () => {
             clubs.map((club, index) => {
               return (
                 <div key={index} className="col-md-3">
-                  <div class="card mb-3">
-                    <img src={club.logo} class="card-img-top" alt="" height={150} width={300} />
-                    <div class="card-body">
-                      <h5 class="card-title">{club.name}</h5>
-                      <p class="card-text">
+                  <div className="card mb-3">
+                    <img
+                      src={club.logo} 
+                      className="card-img-top" 
+                      alt="" 
+                      height={150} 
+                      width={300} 
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">{club.name}</h5>
+                      <p className="card-text">
                         The Club is called {club.name} and its foundation is in {club.name}.
                         Learn more about {club.name}
                       </p>
-                      <Link className='text-success border p-1'>Club Profile <BsArrowRight /></Link>
+                      <Link
+                        className='text-success border p-1'
+                        to={`/football-clubs/${club.name}`}
+                      >
+                        Club Profile <BsArrowRight />
+                      </Link>
                     </div>
                   </div>
                 </div>

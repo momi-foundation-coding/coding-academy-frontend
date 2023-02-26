@@ -33,23 +33,23 @@ const RegisterSoftware = () => {
                 <h5 className='pb-2 font-weight-bold'>Create Your Momi Account</h5>
                 <div className="form-floating mb-2">
                   <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                  <label for="floatingInput">Email address</label>
+                  <label htmlFor="floatingInput">Email address</label>
                 </div>
                 <div className="form-floating mb-2">
                   <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                  <label for="floatingInput">First Name</label>
+                  <label htmlFor="floatingInput">First Name</label>
                 </div>
                 <div className="form-floating mb-2">
                   <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                  <label for="floatingInput">Last Name</label>
+                  <label htmlFor="floatingInput">Last Name</label>
                 </div>
                 <div className="form-floating mb-2">
                   <input type="text" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                  <label for="floatingInput">Phone Number</label>
+                  <label htmlFor="floatingInput">Phone Number</label>
                 </div>
                 <div className="form-floating mb-3">
                   <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
-                  <label for="floatingPassword">Password</label>
+                  <label htmlFor="floatingPassword">Password</label>
                 </div>
                 <button className="w-100 btn btn-lg btn-success" type="submit">Sign up</button>
                 <div className='d-flex mt-2'>

@@ -20,7 +20,7 @@ const LoginScreen = () => {
               id="floatingInput" 
               placeholder="name@example.com"
             />
-            <label for="floatingInput">Email address</label>
+            <label htmlFor="floatingInput">Email address</label>
           </div>
           <div className="w-50 form-floating mb-3">
             <input 
@@ -29,7 +29,7 @@ const LoginScreen = () => {
               id="floatingPassword"
               placeholder="Password"
             />
-            <label for="floatingPassword">Password</label>
+            <label htmlFor="floatingPassword">Password</label>
           </div>
           <div className="w-50 checkbox mb-3">
             <label>

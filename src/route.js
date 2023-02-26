@@ -8,7 +8,8 @@ import {
   DashboardScreen,
   SportsScreen,
   RegisterSoftware,
-  FootballClubs
+  FootballClubs,
+  FootballClub
 } from './containers'
 
 const MainRouters = () => {
@@ -33,6 +34,12 @@ const MainRouters = () => {
         exact
         path="/football-clubs"
         element={<FootballClubs />}
+      />
+      <Route 
+        exact
+        action={({ params }) => {console.log(params)}}
+        path="/football-clubs/:club" // change to name variable change
+        element={<FootballClub />}
       />
       <Route 
         exact
