@@ -42,7 +42,11 @@ const SportsScreen = () => {
                 <h4 className="fst-italic">About</h4>
                 <p className="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
               </div>
-              <div className="p-4">
+              <h4>Links</h4>
+              <div>
+                <Link className='text-success' to='/football-clubs'>Football Clubs</Link>
+              </div>
+              <div className="pt-4">
                 <h4 className="fst-italic">Featured Teams</h4>
                 <ol className="list-unstyled mb-0">
                   <li>

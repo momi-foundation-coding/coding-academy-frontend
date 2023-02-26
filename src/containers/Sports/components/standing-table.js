@@ -1,5 +1,23 @@
 import React from 'react';
-import { FaCheckCircle, FaTimesCircle } from 'react-icons/fa';
+import { FaCheckCircle, FaTimesCircle, FaMinusCircle } from 'react-icons/fa';
+import { images } from '../../../assets';
+
+const sampleImages = [images.AJP_0002, images.AJP_0106, images.AJP_0178, images.AJP_0285]
+
+const SmallLogoIconImage = () => {
+  return (
+    <img
+      src={sampleImages[Math.floor(Math.random() * sampleImages.length)]}
+      alt='' 
+      width={17} 
+      height={17}  
+      style={{ 
+        marginRight: '2px',
+        borderRadius: 50
+      }} 
+    />
+  )
+}
 
 const StandingTable = () => {
   return (
@@ -20,7 +38,10 @@ const StandingTable = () => {
       </thead>
       <tbody>
         <tr>
-          <th scope="row">Cheles</th>
+          <th scope="row">
+            <SmallLogoIconImage />
+            Cheles
+          </th>
           <td>6</td>
           <td>5</td>
           <td>0</td>
@@ -51,8 +72,8 @@ const StandingTable = () => {
               }}
               size={18}
             />
-            <FaTimesCircle
-              color='secondary'
+            <FaMinusCircle
+              color='grey'
               style={{
                 marginRight: '5px'
               }}
@@ -68,7 +89,7 @@ const StandingTable = () => {
           </td>
         </tr>
         <tr>
-          <th scope="row">Kapsowar</th>
+          <th scope="row"><SmallLogoIconImage /> Kapsowar</th>
           <td>6</td>
           <td>5</td>
           <td>0</td>
@@ -99,8 +120,8 @@ const StandingTable = () => {
               }}
               size={18}
             />
-            <FaTimesCircle
-              color='secondary'
+            <FaMinusCircle
+              color='grey'
               style={{
                 marginRight: '5px'
               }}
@@ -116,7 +137,7 @@ const StandingTable = () => {
           </td>
         </tr>
         <tr>
-          <th scope="row">Kiplabai</th>
+          <th scope="row"><SmallLogoIconImage /> Kiplabai</th>
           <td>6</td>
           <td>5</td>
           <td>0</td>
@@ -147,8 +168,8 @@ const StandingTable = () => {
               }}
               size={18}
             />
-            <FaTimesCircle
-              color='secondary'
+            <FaMinusCircle
+              color='grey'
               style={{
                 marginRight: '5px'
               }}
@@ -164,7 +185,7 @@ const StandingTable = () => {
           </td>
         </tr>
         <tr>
-          <th scope="row">Kapchesewes</th>
+          <th scope="row"><SmallLogoIconImage /> Kapchesewes</th>
           <td>6</td>
           <td>5</td>
           <td>0</td>
@@ -195,8 +216,8 @@ const StandingTable = () => {
               }}
               size={18}
             />
-            <FaTimesCircle
-              color='secondary'
+            <FaMinusCircle
+              color='grey'
               style={{
                 marginRight: '5px'
               }}
