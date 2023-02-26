@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Root from './routes/root.js'
-import Curriculum from './routes/curriculum.js'
 import {
   LoginScreen,
   SoftwareScreen,
@@ -9,7 +8,8 @@ import {
   SportsScreen,
   RegisterSoftware,
   FootballClubs,
-  FootballClub
+  FootballClub,
+  Curriculum
 } from './containers'
 
 const MainRouters = () => {
@@ -41,11 +41,11 @@ const MainRouters = () => {
         path="/football-clubs/:club" // change to name variable change
         element={<FootballClub />}
       />
-      <Route 
+      {/* <Route 
         exact
         path="/curriculum"
         element={<Curriculum />}
-      />
+      /> */}
       <Route 
         exact
         path="/login"

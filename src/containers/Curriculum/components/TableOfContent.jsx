@@ -1,4 +1,4 @@
-import { useHeadsObserver } from "../Hooks/useHeadsObserver";
+import { useHeadsObserver } from "../../../Hooks/useHeadsObserver";
 import "./tableOfContent.css";
 import { useEffect, useState } from "react";
 
