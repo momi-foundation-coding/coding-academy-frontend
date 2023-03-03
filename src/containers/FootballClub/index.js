@@ -35,6 +35,8 @@ const FootballClub = () => {
   const handleChangeTab = (item) => {
     setShow(item)
   }
+  
+  console.log(players, handleChangeTab)
 
   return (
     <div className=''>
