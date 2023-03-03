@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import { BsArrowRight } from 'react-icons/bs';
 import { images } from '../../assets';
+import Button from '../../components/Button';
 
 
 const players = [
@@ -65,7 +66,7 @@ const FootballClub = () => {
         </div>
         <nav>
         <div className="nav nav-tabs" id="myTab" role="tablist">
-          <button
+          <Button
             className="nav-link active text-success" 
             id="nav-home-tab" 
             data-bs-toggle="tab" 
@@ -76,8 +77,8 @@ const FootballClub = () => {
             aria-selected="true"
           >
             Overview
-          </button>
-          <button 
+          </Button>
+          <Button 
             className="nav-link text-success" 
             id="nav-profile-tab" 
             data-bs-toggle="tab" 
@@ -88,8 +89,8 @@ const FootballClub = () => {
             aria-selected="false"
           >
             Squad
-          </button>
-          <button
+          </Button>
+          <Button
             className="nav-link text-success" 
             id="nav-contact-tab" 
             data-bs-toggle="tab" 
@@ -100,8 +101,8 @@ const FootballClub = () => {
             aria-selected="false"
           >
             Fixtures
-          </button>
-          <button 
+          </Button>
+          <Button 
             className="nav-link text-success" 
             id="nav-home-tab" 
             data-bs-toggle="tab" 
@@ -112,7 +113,7 @@ const FootballClub = () => {
             aria-selected="true"
           >
             Stats
-          </button>
+          </Button>
         </div>
         </nav>
         <div className="tab-content" id="nav-tabContent">

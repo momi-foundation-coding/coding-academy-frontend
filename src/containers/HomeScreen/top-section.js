@@ -1,5 +1,6 @@
 import React from 'react'
 import { images } from '../../assets';
+import Button from '../../components/Button';
 
 const TopSection = () => {
   return (
@@ -13,7 +14,7 @@ const TopSection = () => {
             The organization is looking forward to empowering the community <br />
             Through technology, talent, and education
           </p>
-          <button type='button' className='btn btn-success'>Learn More</button>
+          <Button btnType="success">Learn More</Button>
         </div>
       </div>
       <div className='col-md-5'>
