@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsLinkedin, BsTwitter, BsFacebook } from "react-icons/bs";
+import Button from './Button';
 
 
 const Footer = () => {
@@ -73,7 +74,7 @@ const Footer = () => {
               <div className="d-flex flex-column flex-sm-row w-100 gap-2">
                 <label htmlFor="newsletter1" className="visually-hidden">Email address</label>
                 <input id="newsletter1" type="text" className="form-control" placeholder="Email address" />
-                <button className="btn btn-success" type="button">Subscribe</button>
+                <Button btnType="success">Subscribe</Button>
               </div>
             </form>
           </div>

@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
 import { Link } from 'react-router-dom';
 import { images } from '../../assets';
+import Button from '../../components/Button';
 
 
 const SoftwareScreen = () => {
@@ -16,18 +17,19 @@ const SoftwareScreen = () => {
           <div className='d-flex flex-column align-items-center'>
             <h1 className='align-self-center col-8 text-success'>Build your Career</h1>
             <p className='col-8'>
-              At Momi Foundation, we are running different software engineer classes, 
+              At Momi Foundation, we are running different software engineer classes,
               events, online mentoring and support in career progression and interview process.
-              We will help you build your technical skills, software skills and interact with 
+              We will help you build your technical skills, software skills and interact with
               world class software engineer.
             </p>
             <Link className='col-8' to='/register-software'>
-              <button 
+              <Button
                 type='button'
-                className='btn btn-success col-4'
+                btnType="success"
+                className='col-4'
               >
                 Register Now
-              </button>
+              </Button>
             </Link>
           </div>
         </div>
@@ -98,7 +100,7 @@ const SoftwareScreen = () => {
                 <li>Learn React</li>
                 <li>Backend Development with Flask</li>
                 <li>Backend Development with NodeJS</li>
-                <button className="btn btn-success col-md-6 mt-4">Check Path</button>
+                <Button btnType="success" className="col-md-6 mt-4">Check Path</Button>
               </div>
             </div>
           </div>
@@ -119,7 +121,7 @@ const SoftwareScreen = () => {
                 <li>Learn React</li>
                 <li>Backend Development with Flask</li>
                 <li>Backend Development with NodeJS</li>
-                <button className="btn btn-success col-md-6 mt-4">Check Path</button>
+                <Button btnType="success" className="col-md-6 mt-4">Check Path</Button>
               </div>
             </div>
           </div>
@@ -140,7 +142,7 @@ const SoftwareScreen = () => {
                 <li>Learn React</li>
                 <li>Backend Development with Flask</li>
                 <li>Backend Development with NodeJS</li>
-                <button className="btn btn-success col-md-6 mt-4">Check Path</button>
+                <Button btnType="success" className="col-md-6 mt-4">Check Path</Button>
               </div>
             </div>
           </div>
@@ -157,7 +159,7 @@ const SoftwareScreen = () => {
                 <li>Strategic Alignment</li>
                 <li>Stakeholder Management</li>
                 <li>resource Management</li>
-                <button className="btn btn-success col-md-6 mt-4">Check Path</button>
+                <Button btnType="success" className="col-md-6 mt-4">Check Path</Button>
               </div>
             </div>
           </div>
@@ -174,7 +176,7 @@ const SoftwareScreen = () => {
                 <li>Strategic Alignment</li>
                 <li>Stakeholder Management</li>
                 <li>resource Management</li>
-                <button className="btn btn-success col-md-6 mt-4">Check Path</button>
+                <Button btnType="success" className="col-md-6 mt-4">Check Path</Button>
               </div>
             </div>
           </div>
@@ -191,7 +193,7 @@ const SoftwareScreen = () => {
                 <li>Strategic Alignment</li>
                 <li>Stakeholder Management</li>
                 <li>resource Management</li>
-                <button className="btn btn-success col-md-6 mt-4">Check Path</button>
+                <Button btnType="success" className="col-md-6 mt-4">Check Path</Button>
               </div>
             </div>
           </div>
@@ -207,8 +209,8 @@ const SoftwareScreen = () => {
               <strong className="d-inline-block mb-2 text-success">Ezrqn kemboi, Kenya</strong>
               <p>
                 Momi Foundation has helped me understand software development. I am confident right Now
-                that I am ready and prepared to apply for Junior to mid-level jobs. Also, apart 
-                from learning coding, I was able to learn leadership skills, project management, 
+                that I am ready and prepared to apply for Junior to mid-level jobs. Also, apart
+                from learning coding, I was able to learn leadership skills, project management,
                 soft skills and general team building.
               </p>
               <p className="mb-1 text-muted">February 2023</p>
@@ -219,8 +221,8 @@ const SoftwareScreen = () => {
               <strong className="d-inline-block mb-2 text-success">David Mwangi, Kenya</strong>
               <p>
                 Momi Foundation has helped me understand software development. I am confident right Now
-                that I am ready and prepared to apply for Junior to mid-level jobs. Also, apart 
-                from learning coding, I was able to learn leadership skills, project management, 
+                that I am ready and prepared to apply for Junior to mid-level jobs. Also, apart
+                from learning coding, I was able to learn leadership skills, project management,
                 soft skills and general team building.
               </p>
               <p className="mb-1 text-muted">February 2023</p>
@@ -231,8 +233,8 @@ const SoftwareScreen = () => {
               <strong className="d-inline-block mb-2 text-success">Mark Too, Kenya</strong>
               <p>
                 Momi Foundation has helped me understand software development. I am confident right Now
-                that I am ready and prepared to apply for Junior to mid-level jobs. Also, apart 
-                from learning coding, I was able to learn leadership skills, project management, 
+                that I am ready and prepared to apply for Junior to mid-level jobs. Also, apart
+                from learning coding, I was able to learn leadership skills, project management,
                 soft skills and general team building.
               </p>
               <p className="mb-1 text-muted">February 2023</p>
@@ -248,12 +250,13 @@ const SoftwareScreen = () => {
           We are here to help you progress in your career
         </p>
         <Link className='d-flex justify-content-center col-12' to='/register-software'>
-          <button 
+          <Button
             type='button'
-            className='btn btn-success col-2'
+            btnType="success"
+            className='col-2'
           >
             Register Now
-          </button>
+          </Button>
         </Link>
       </div>
       <Footer />

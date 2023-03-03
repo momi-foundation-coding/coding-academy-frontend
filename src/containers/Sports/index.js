@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import { UpcomingEvents, StandingTable } from './components'
 import { Link } from 'react-router-dom';
+import Button from '../../components/Button';
 
 const groups = ['Group A', 'Group B', 'Group C', 'Group D']
 
@@ -15,10 +16,10 @@ const SportsScreen = () => {
           <div className="col-md-6 px-0">
             <h1 className="display-6 fst-italic">Momi Foundation Football League - April 2023</h1>
             <p className="lead my-3">
-              Multiple lines of text that form the lede, informing new readers quickly and efficiently 
+              Multiple lines of text that form the lede, informing new readers quickly and efficiently
               about whats most interesting in this pos contents.
             </p>
-            <button className='btn btn-light text-success'>Check Now</button>
+            <Button className='btn btn-light text-success'>Check Now</Button>
           </div>
         </div>
         <UpcomingEvents />

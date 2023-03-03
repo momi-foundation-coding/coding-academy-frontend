@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { images } from '../../assets'
+import Button from '../../components/Button'
 import Footer from '../../components/footer'
 import NavBar from '../../components/navbar'
 
@@ -14,18 +15,18 @@ const LoginScreen = () => {
           <img className="mb-4" src={images.logo} alt="" width="72" height="57" />
           <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
           <div className="w-50 form-floating mb-3">
-            <input 
-              type="email" 
-              className="form-control" 
-              id="floatingInput" 
+            <input
+              type="email"
+              className="form-control"
+              id="floatingInput"
               placeholder="name@example.com"
             />
             <label htmlFor="floatingInput">Email address</label>
           </div>
           <div className="w-50 form-floating mb-3">
-            <input 
-              type="password" 
-              className="form-control" 
+            <input
+              type="password"
+              className="form-control"
               id="floatingPassword"
               placeholder="Password"
             />
@@ -37,12 +38,13 @@ const LoginScreen = () => {
             </label>
           </div>
           <Link to="/dashboard">
-            <button
-              className="w-50 btn btn-lg btn-success"
+            <Button
+              className="w-50 btn-lg"
+              btnType="success"
               type="submit"
             >
               Sign in
-            </button>
+            </Button>
           </Link>
         </form>
       </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../../components/navbar';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/footer'
+import Button from '../../components/Button';
 
 const RegisterSoftware = () => {
   return (
@@ -17,7 +18,7 @@ const RegisterSoftware = () => {
                 Register To Learn Software
               </h3>
               <p className="col-lg-12 fs-5">
-                Get the best out of our programs and be an expert in one of the fields below: 
+                Get the best out of our programs and be an expert in one of the fields below:
               </p>
               <ul>
                 <li>Full-stack Engineer</li>
@@ -51,7 +52,12 @@ const RegisterSoftware = () => {
                   <input type="password" className="form-control" id="floatingPassword" placeholder="Password" />
                   <label htmlFor="floatingPassword">Password</label>
                 </div>
-                <button className="w-100 btn btn-lg btn-success" type="submit">Sign up</button>
+                <Button
+                  btnType="success"
+                  className="w-100 btn-lg"
+                  type="submit">
+                  Sign up
+                </Button>
                 <div className='d-flex mt-2'>
                   <p className='px-2'>Already have an account?</p>
                   <Link className='link-success' to="/login">Login</Link>
