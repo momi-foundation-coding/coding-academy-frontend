@@ -61,6 +61,11 @@ const NavBar = () => {
                 <div className="nav-link active" aria-current="page" role="button">Software</div>
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/blog">
+                <div className="nav-link active" aria-current="page" role="button">Blog</div>
+              </Link>
+            </li>
           </ul>
           {/* <form className="d-flex" role="search"> */}
             {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

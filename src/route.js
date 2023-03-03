@@ -9,7 +9,8 @@ import {
   SportsScreen,
   RegisterSoftware,
   FootballClubs,
-  FootballClub
+  FootballClub,
+  BlogScreen
 } from './containers'
 
 const MainRouters = () => {
@@ -60,6 +61,11 @@ const MainRouters = () => {
         exact
         path="/sports"
         element={<SportsScreen />}
+      />
+      <Route 
+        exact
+        path="/blog"
+        element={<BlogScreen />}
       />
     </Routes>
   )
