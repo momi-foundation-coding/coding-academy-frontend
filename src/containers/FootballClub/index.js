@@ -95,7 +95,7 @@ const FootballClub = () => {
             data-bs-toggle="tab" 
             data-bs-target="#nav-contact" 
             type="button" 
-            ole="tab" 
+            role="tab" 
             aria-controls="nav-contact" 
             aria-selected="false"
           >
