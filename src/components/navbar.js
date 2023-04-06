@@ -1,13 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { images } from '../assets';
+import { useLocation } from 'react-router-dom'
 
+const pathLookUp = {
+  '/sports': 'sports',
+  '/software': 'software',
+  '/football-clubs': 'football-clubs',
+  '/blog': 'blog'
+}
 
 const NavBar = () => {
+  const { pathname } = useLocation();
+  const nameOfPath = pathLookUp[pathname]
+
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -25,22 +42,42 @@ const NavBar = () => {
             </li>
             <li className="nav-item">
               <Link to="/sports">
-                <div className="nav-link active" aria-current="page" role="button">Sports</div>
+                <button
+                  className={`btn btn-outline-success ${nameOfPath === 'sports' ? 'active' : ''}`}
+                  aria-current="page"
+                >
+                  Sports
+                </button>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/software">
-                <div className="nav-link active" aria-current="page" role="button">Learning</div>
+                <button
+                  className={`btn btn-outline-success ${nameOfPath === 'software' ? 'active' : ''}`}
+                  aria-current="page"
+                >
+                  Learning
+                </button>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/football-clubs">
-                <div className="nav-link active" aria-current="page" role="button">Football Clubs</div>
+                <button 
+                  className={`btn btn-outline-success ${nameOfPath === 'football-clubs' ? 'active' : ''}`}
+                  aria-current="page"
+                >
+                  Football Clubs
+                </button>
               </Link>
             </li>
             <li className="nav-item">
               <Link to="/blog">
-                <div className="nav-link active" aria-current="page" role="button">Blog</div>
+                <button
+                  className={`btn btn-outline-success ${nameOfPath === 'blog' ? 'active' : ''}`}
+                  aria-current="page"
+                >
+                  Blog
+                </button>
               </Link>
             </li>
           </ul>

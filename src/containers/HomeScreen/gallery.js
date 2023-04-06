@@ -40,7 +40,7 @@ const Gallery = () => {
   return (
     <div class="container py-3 border-top border-2 mt-3">
     <div class="row">
-      <h1 class="pb-2 d-flex justify-content-center text-decoration-underline">Gallery</h1>
+      <h1 class="pb-2 d-flex justify-content-center text-success">Gallery</h1>
       <div class="col-12">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner active">
