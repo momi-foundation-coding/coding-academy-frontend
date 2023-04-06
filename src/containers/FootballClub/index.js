@@ -1,10 +1,29 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import { BsArrowRight } from 'react-icons/bs';
 import { images } from '../../assets';
+import Players from './players';
+import moment from 'moment';
+import Fixtures from './fixtures';
 
+
+const fixtures = [
+  {
+    date: moment('2023-04-25').format('DD-MM-YYYY'),
+    field: 'Sinon, Kapsowar',
+    opponent: 'Kapchesewes' 
+  },
+  {
+    date: moment('2023-04-25').format('DD-MM-YYYY'),
+    field: 'Moi Girls Kapsowar, Kapsowar',
+    opponent: 'Kapsowar' 
+  },
+  {
+    date: moment('2023-04-25').format('DD-MM-YYYY'),
+    field: 'Chepkuta, Kapsowar',
+    opponent: 'Chelaite' 
+  }
+]
 
 const players = [
   {
@@ -30,13 +49,13 @@ const players = [
 ]
 
 const FootballClub = () => {
-  const [show, setShow] = useState('1')
+  const [tab, setTab] = useState('players')
 
-  const handleChangeTab = (item) => {
-    setShow(item)
+  const handleSetTab = (item) => {
+    setTab(item)
   }
   
-  console.log(players, handleChangeTab)
+  console.log(players)
 
   return (
     <div className=''>
@@ -65,20 +84,8 @@ const FootballClub = () => {
         </div>
         <nav>
         <div className="nav nav-tabs" id="myTab" role="tablist">
-          <button
-            className="nav-link active text-success" 
-            id="nav-home-tab" 
-            data-bs-toggle="tab" 
-            data-bs-target="#nav-home" 
-            type="button" 
-            role="tab" 
-            aria-controls="nav-home" 
-            aria-selected="true"
-          >
-            Overview
-          </button>
           <button 
-            className="nav-link text-success" 
+            className={`nav-link text-success ${tab == 'players' ? 'active' : ''}`}
             id="nav-profile-tab" 
             data-bs-toggle="tab" 
             data-bs-target="#nav-profile" 
@@ -86,90 +93,42 @@ const FootballClub = () => {
             role="tab" 
             aria-controls="nav-profile" 
             aria-selected="false"
+            onClick={() => handleSetTab("players")}
           >
             Squad
           </button>
           <button
-            className="nav-link text-success" 
+            className={`nav-link text-success ${tab == 'fixtures' ? 'active' : ''}`}
             id="nav-contact-tab" 
             data-bs-toggle="tab" 
             data-bs-target="#nav-contact" 
             type="button" 
-            role="tab" 
+            role="tab"
+            onClick={() => handleSetTab("fixtures")}
             aria-controls="nav-contact" 
             aria-selected="false"
           >
             Fixtures
           </button>
-          <button 
-            className="nav-link text-success" 
-            id="nav-home-tab" 
-            data-bs-toggle="tab" 
-            data-bs-target="#nav-home" 
-            type="button" 
-            role="tab" 
-            aria-controls="nav-home" 
-            aria-selected="true"
-          >
-            Stats
-          </button>
         </div>
         </nav>
         <div className="tab-content" id="nav-tabContent">
           <div
-            className={
-              `d-flex tab-pane 
-              fade ${show === '1' && 'show active'} p-4
-              `
-            }
+            className={`d-flex tab-pane fade show active p-4`}
             id="home"
             role="tabpanel"
             aria-labelledby="home-tab"
           >
-            <div  
-              className='col-md-3 p-3' 
-              style={{ borderRight: 20 }}
-            >
-              Ama
-            </div>
-            <div 
-              className='col-md-9 m-2'
-            >
-              <div className='d-flex align-items-center border p-3'>
-                <div className='col-md-7'>
-                  <h3>Cheles Learn More</h3>
-                  <p>
-                  <p className="card-text">
-                    The Club is called Cheles and its foundation is in Cheles.
-                    Learn more about Cheles
-                  </p>
-                  <Link
-                    className='text-success'
-                  >
-                    Cheles<BsArrowRight />
-                  </Link>
-                  </p>
-                </div>
-                <div className='col-md-4'>
-                  <img src={images.AJP_0077} width={400} alt='' />
-                </div>
-              </div>
-              <h3 className='pt-4'>Latest Club News</h3>
-            </div>
-          </div>
-          <div
-            className={
-              `d-flex tab-pane 
-              fade ${show === '2' && 'show active'} p-4
-              `
+            {
+              tab == 'players' ?
+                <Players players={players}/>
+              : 
+              tab == 'fixtures' ?
+                <Fixtures fixtures={fixtures} currentTeam={"Cheles"} />
+              :
+              <div></div>
             }
-            id="nav-home" role="tabpanel"
-            aria-labelledby="nav-home-tab"
-            onClick={(item) => console.log({ item })}
-          >
-            <h1>Heading one</h1>
           </div>
-          
         </div>
         </div>
       <Footer />
