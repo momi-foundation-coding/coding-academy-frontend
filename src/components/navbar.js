@@ -7,63 +7,30 @@ const NavBar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        {/* <div class="navbar-brand" href="#">Navbar</div> */}
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav w-100 justify-content-around me-auto mb-2 mb-lg-0 align-items-center">
             <li class="nav-item align-items-center px-2">
               <Link to="/">
                 <img 
                   className='rounded-circle'
                   src={images.logo}
                   alt=''
-                  width={40}
-                  height={40}
+                  width={60}
+                  height={60}
                 />
               </Link>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link active" aria-current="page" role="button">About</div>
             </li>
             <li className="nav-item">
               <Link to="/sports">
                 <div className="nav-link active" aria-current="page" role="button">Sports</div>
               </Link>
             </li>
-            <li class="nav-item dropdown">
-              <div
-                className="nav-link dropdown-toggle"
-                role="button" data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Technology
-              </div>
-              <ul className="dropdown-menu">
-                <li>
-                  <div className="dropdown-item">Software</div>
-                </li>
-                <li>
-                  <div className="dropdown-item">Project Management</div>
-                </li>
-                <li><hr className="dropdown-divider" /></li>
-                <li>
-                  <div className="dropdown-item">Software</div>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link active" role="button">Education</div>
-            </li>
             <li className="nav-item">
               <Link to="/software">
-                <div className="nav-link active" aria-current="page" role="button">Software</div>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/blog">
-                <div className="nav-link active" aria-current="page" role="button">Blog</div>
+                <div className="nav-link active" aria-current="page" role="button">Learning</div>
               </Link>
             </li>
             <li className="nav-item">
@@ -71,11 +38,12 @@ const NavBar = () => {
                 <div className="nav-link active" aria-current="page" role="button">Football Clubs</div>
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/blog">
+                <div className="nav-link active" aria-current="page" role="button">Blog</div>
+              </Link>
+            </li>
           </ul>
-          {/* <form className="d-flex" role="search"> */}
-            {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success" type="submit">Search</button> */}
-          {/* </form> */}
         </div>
       </div>
     </nav>

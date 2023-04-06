@@ -9,9 +9,9 @@ const TopSection = () => {
       <div className='col-7'>
         <div className='d-flex flex-column align-items-center'>
           <h1 className='align-self-center'>Momi Foundation</h1>
-          <p>
-            The organization is looking forward to empowering the community <br />
-            Through technology, talent, and education
+          <p className='w-75'>
+            Momi foundation is an organization built as an NGO that looks forward to empowering youth and community through technology, talent, and education. We are made with the mind that youth and the community in general play an essential part in the development of this country. Moreover, technology, education, 
+            and talent are 3 key factors to such development success. 
           </p>
           <button type='button' className='btn btn-success'>Learn More</button>
         </div>

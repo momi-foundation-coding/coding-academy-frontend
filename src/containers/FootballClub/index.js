@@ -85,7 +85,7 @@ const FootballClub = () => {
         <nav>
         <div className="nav nav-tabs" id="myTab" role="tablist">
           <button 
-            className={`nav-link text-success ${tab == 'players' ? 'active' : ''}`}
+            className={`nav-link text-success ${tab === 'players' ? 'active' : ''}`}
             id="nav-profile-tab" 
             data-bs-toggle="tab" 
             data-bs-target="#nav-profile" 
@@ -98,7 +98,7 @@ const FootballClub = () => {
             Squad
           </button>
           <button
-            className={`nav-link text-success ${tab == 'fixtures' ? 'active' : ''}`}
+            className={`nav-link text-success ${tab === 'fixtures' ? 'active' : ''}`}
             id="nav-contact-tab" 
             data-bs-toggle="tab" 
             data-bs-target="#nav-contact" 
@@ -120,10 +120,10 @@ const FootballClub = () => {
             aria-labelledby="home-tab"
           >
             {
-              tab == 'players' ?
+              tab === 'players' ?
                 <Players players={players}/>
               : 
-              tab == 'fixtures' ?
+              tab === 'fixtures' ?
                 <Fixtures fixtures={fixtures} currentTeam={"Cheles"} />
               :
               <div></div>
