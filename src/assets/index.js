@@ -3,7 +3,7 @@
  */
 import elders from './elders.jpeg'
 import youth from './youth.jpeg'
-import logo from './logo192.png'
+import logo from './logo-banner.png'
 import AJP_0002 from './AJP_0002.jpeg'
 import AJP_0003 from './AJP_0003.jpeg'
 import AJP_0004 from './AJP_0004.jpeg'
