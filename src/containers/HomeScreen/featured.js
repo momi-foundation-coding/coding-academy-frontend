@@ -5,36 +5,61 @@ import { Link } from 'react-router-dom';
 const Featured = () => {
   return (
     <div class="container py-3 border-top border-2 mt-3">
-      <h1 class="pb-2 d-flex justify-content-center text-decoration-underline">Featured Programs</h1>
-      <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <BsCode size={40} color="green"/>
-          </div>
-          <div>
-            <h3 class="fs-2">Software Development</h3>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            <Link className='btn btn-success' to="/software">Learn More</Link>
+      <h1 class="pb-2 d-flex justify-content-center text-success">Our core features</h1>
+      <p className='text-center'>We are made with the mind that youth and the community in general play an 
+        essential part in the development of this country. 
+      </p>
+      <div class="d-flex justify-content-around">
+        <div class="card mb-3 col-4 m-2 p-2 border border-white shadow">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <BsCode size={100} color="green" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="text-success text-capitalize font-weight-bold">Technology</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural 
+                  lead-in to additional content. This content is a little bit longer.
+                  This is a wider card with supporting 
+                </p>
+                <Link to="/software">
+                  <button class="btn btn-outline-warning"><small class="">Learn More</small></button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <BsBicycle size={40} color="green" />
-          </div>
-          <div>
-            <h3 class="fs-2">Sports</h3>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            <Link className='btn btn-success' to="/sports">Learn More</Link>
+        <div class="card mb-3 col-4 m-2 p-2 border border-white shadow">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <BsBicycle size={100} color="green" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="text-success text-capitalize font-weight-bold">Sports</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <Link to="/sports">
+                  <button class="btn btn-outline-warning"><small class="">Learn More</small></button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-            <BsBook size={40} color="green" />
-          </div>
-          <div>
-            <h3 class="fs-2">Education</h3>
-            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-            <button className='btn btn-success'>Learn More</button>
+        <div class="card mb-3 col-4 m-2 p-2 border border-white shadow">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <BsBook size={100} color="green" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="text-success text-capitalize font-weight-bold">Education</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <Link to="/software">
+                  <button class="btn btn-outline-warning"><small class="">Learn More</small></button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
