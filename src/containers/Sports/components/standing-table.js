@@ -52,7 +52,7 @@ const StandingTable = () => {
           <td>15</td>
           <td>
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -66,21 +66,21 @@ const StandingTable = () => {
               size={18}
             />
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
               size={18}
             />
             <FaMinusCircle
-              color='grey'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
               size={18}
             />
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -100,7 +100,7 @@ const StandingTable = () => {
           <td>15</td>
           <td>
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -114,7 +114,7 @@ const StandingTable = () => {
               size={18}
             />
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -128,7 +128,7 @@ const StandingTable = () => {
               size={18}
             />
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -148,7 +148,7 @@ const StandingTable = () => {
           <td>15</td>
           <td>
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -162,7 +162,7 @@ const StandingTable = () => {
               size={18}
             />
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -176,7 +176,7 @@ const StandingTable = () => {
               size={18}
             />
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -196,7 +196,7 @@ const StandingTable = () => {
           <td>15</td>
           <td>
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -210,7 +210,7 @@ const StandingTable = () => {
               size={18}
             />
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}
@@ -224,7 +224,7 @@ const StandingTable = () => {
               size={18}
             />
             <FaCheckCircle
-              color='green'
+              color='43bdad'
               style={{
                 marginRight: '5px'
               }}

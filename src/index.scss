@@ -15,3 +15,42 @@ a {
   text-decoration: none;
 }
 
+.text-secondary {
+  color: #fca80f !important;
+}
+
+.text-primary {
+  color: #43bdad !important; 
+}
+
+.text-success {
+  color: #43bdad !important; 
+}
+
+.text-warning {
+  color: #fca80f !important;
+}
+
+.btn-outline-warning {
+  border-color: #fca80f;
+  color: #fca80f;
+}
+
+.btn-success {
+  background-color: #43bdad;
+  border-color: #43bdad;
+}
+
+.btn-outline-success {
+  border-color: #43bdad;
+  color: #43bdad;
+}
+
+.active {
+  background-color: #43bdad !important;
+  border-color: #43bdad !important;
+}
+
+.text-bg-success {
+  background-color: #43bdad !important;
+}

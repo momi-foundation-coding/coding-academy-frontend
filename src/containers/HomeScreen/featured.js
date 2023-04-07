@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Featured = () => {
   return (
     <div class="container py-3 border-top border-2 mt-3">
-      <h1 class="pb-2 d-flex justify-content-center text-success">Our core features</h1>
+      <h1 class="pb-2 d-flex justify-content-center text-primary">Our core features</h1>
       <p className='text-center'>We are made with the mind that youth and the community in general play an 
         essential part in the development of this country. 
       </p>
@@ -13,7 +13,7 @@ const Featured = () => {
         <div class="card mb-3 col-4 m-2 p-2 border border-white shadow">
           <div class="row g-0">
             <div class="col-md-4">
-              <BsCode size={100} color="green" />
+              <BsCode size={100} color="#43bdad" />
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -33,7 +33,7 @@ const Featured = () => {
         <div class="card mb-3 col-4 m-2 p-2 border border-white shadow">
           <div class="row g-0">
             <div class="col-md-4">
-              <BsBicycle size={100} color="green" />
+              <BsBicycle size={100} color="#43bdad" />
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -49,7 +49,7 @@ const Featured = () => {
         <div class="card mb-3 col-4 m-2 p-2 border border-white shadow">
           <div class="row g-0">
             <div class="col-md-4">
-              <BsBook size={100} color="green" />
+              <BsBook size={100} color="#43bdad" />
             </div>
             <div class="col-md-8">
               <div class="card-body">
