@@ -1,6 +1,6 @@
-import { images } from './assets/index';
+import { images } from '../assets/index';
 
-export const teams = [
+const teams = [
   {
     "name": "Hossen",
     "formation": "4-3-3",
@@ -285,3 +285,4 @@ export const teams = [
   }
 ]
 
+export default teams;
