@@ -1,9 +1,9 @@
-// import { Link } from 'react-router-dom'
 import NavBar from '../../components/navbar';
 import Footer from '../../components/footer';
 import TopSection from './top-section';
 import Featured from './featured';
-import Gallery from './gallery';
+import AboutUs from './about-us';
+import Services from './services';
 
 const HomeScreen = () => {
   return (
@@ -11,7 +11,8 @@ const HomeScreen = () => {
       <NavBar />
       <TopSection />
       <Featured />
-      <Gallery />
+      <AboutUs />
+      <Services />
       <Footer />
     </div>
   );
