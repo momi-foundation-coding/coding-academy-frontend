@@ -5,29 +5,35 @@ import moment from "moment";
 
 const Players = ({ players }) => {
   return (
-    <div className="d-flex flex-row">
+    <div className="row row-cols-1 row-cols-md-4 g-4">
       {
-        players.map(player => {
-          const dateOfBirth = moment("1996-03-25").format('DD-MM-YYYY')
-          const age =  moment().diff('1996-03-25', 'years');
+        players.map((player, index) => {
+          const age =  moment().diff(player.DOB, 'years');
           return (
             <div  
-              className='col-md-3 p-3'
-              key={player.name}
+              className='col'
+              key={player.name + index}
             >
-              <div class="card">
-                <img class="card-img-top" src={images.AJP_0077} alt={`Player ${player.name}`} />
-                <div class="card-body">
-                  <h5 class="card-title">{player.name}</h5>
-                  <p>Position: {player.position}</p>
-                  <p>D.O.B: {`${dateOfBirth}`}</p>
-                  <p>Age: {`${age}`}</p>
-                  <p>Height: 168m</p>
-                  <hr />
-                  <p>Apperances: 20</p>
-                  <p>Cleansheets: 0</p>
-                  <p>Goals: 20</p>
-                  <p>Assists: 6</p>
+              <div className="card border border-warning">
+                <div className='d-flex justify-content-between p-2 border-bottom bg-light'>
+                  <div className=''>
+                    <p className='lh-1'>{player.number}</p>
+                    <p className='lh-1'>{player.name}</p>
+                    <p className='lh-1'>{player.position}</p>
+                    <p className='lh-1'>{age} Years</p>
+                  </div>
+                  <img
+                    src={images.AJP_0077}
+                    width={100}
+                    className="rounded-circle"
+                    alt={`Player ${player.name}`}
+                  />
+                </div>
+                <div className="card-body">
+                  <p className='lh-1'>Apperances: {player.apperances}</p>
+                  <p className='lh-1'>Cleansheets: {player.cleansheets}</p>
+                  <p className='lh-1'>Goals: {player.goals} </p>
+                  <p className='lh-1'>Assists: {player.assists}</p>
                 </div>
               </div>
             </div>

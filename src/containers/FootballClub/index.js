@@ -5,7 +5,7 @@ import { images } from '../../assets';
 import Players from './players';
 import moment from 'moment';
 import Fixtures from './fixtures';
-
+import { useLocation } from 'react-router-dom';
 
 const fixtures = [
   {
@@ -25,37 +25,15 @@ const fixtures = [
   }
 ]
 
-const players = [
-  {
-    "name": "Roger Kemboi",
-    "position": "1",
-    "image": images.AJP_0003
-  },
-  {
-    "name": "Mark Too",
-    "position": "13",
-    "image": images.AJP_0270
-  },
-  {
-    "name": "Oliver Kiprop",
-    "position": "12",
-    "image": images.AJP_0178
-  },
-  {
-    "name": "Festus Kop",
-    "position": "9",
-    "image": images.AJP_0190
-  }
-]
-
 const FootballClub = () => {
   const [tab, setTab] = useState('players')
 
   const handleSetTab = (item) => {
     setTab(item)
   }
-  
-  console.log(players)
+
+  const location = useLocation();
+  const data = location.state;
 
   return (
     <div className=''>
@@ -80,7 +58,10 @@ const FootballClub = () => {
               marginRight: 20
             }}
           />
-          <h1>Cheles FC</h1>
+          <div>
+            <h1>{data.name}</h1>
+            <p>{data.description}</p>
+          </div>
         </div>
         <nav>
         <div className="nav nav-tabs" id="myTab" role="tablist">
@@ -121,10 +102,10 @@ const FootballClub = () => {
           >
             {
               tab === 'players' ?
-                <Players players={players}/>
+                <Players players={data.squad}/>
               : 
               tab === 'fixtures' ?
-                <Fixtures fixtures={fixtures} currentTeam={"Cheles"} />
+                <Fixtures fixtures={fixtures} currentTeam={data.name} />
               :
               <div></div>
             }

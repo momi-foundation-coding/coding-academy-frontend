@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import { BsArrowRight, BsSearch } from 'react-icons/bs';
-import { clubs } from '../../mock'
+import { BsArrowRight } from 'react-icons/bs';
+import { teams } from '../../db'
 
 
 const FootballClubs = () => {
@@ -14,22 +14,19 @@ const FootballClubs = () => {
         className='container-fluid mb-4 p-4'
       >
         <div className=' d-flex p-4 p-md-5 mb-4 rounded text-bg-success align-items-center'>
-          <h1 className='pb-4'>Clubs</h1>
+          <h1 className='pb-4'>Football Clubs</h1>
           <div className="col-md-5 offset-md-1 mb-3">
-            <form>
-              <div className="d-flex flex-column flex-sm-row w-100 gap-2 align-items-center">
-                <label htmlFor="newsletter1" className="visually-hidden">Search</label>
-                <input id="newsletter1" type="text" className="form-control" placeholder="Search" />
-                <BsSearch size={25} />
-              </div>
-            </form>
+            <p>
+              Find various teams that are participating or will be participating 
+              on Momi Foundation tournament and all its players.
+            </p>
           </div>
         </div>
         <div className="d-flex justify-content-around row mb-2">
           {
-            clubs.map((club, index) => {
+            teams.map((club) => {
               return (
-                <div key={index} className="col-md-3">
+                <div key={club.name} className="col-md-3">
                   <div className="card mb-3">
                     <img
                       src={club.logo} 
@@ -47,6 +44,7 @@ const FootballClubs = () => {
                       <Link
                         className='text-success p-2'
                         to={`/football-clubs/${club.name}`}
+                        state={club}
                       >
                         Club Profile <BsArrowRight />
                       </Link>
