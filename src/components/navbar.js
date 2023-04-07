@@ -15,7 +15,7 @@ const NavBar = () => {
   const nameOfPath = pathLookUp[pathname]
 
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg mb-3 border-bottom">
       <div class="container-fluid">
         <button
           class="navbar-toggler" 
@@ -28,59 +28,66 @@ const NavBar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav w-100 justify-content-around me-auto mb-2 mb-lg-0 align-items-center">
-            <li class="nav-item align-items-center px-2">
-              <Link to="/">
-                <img 
-                  className='rounded-circle'
-                  src={images.logo}
-                  alt=''
-                  width={60}
-                  height={60}
-                />
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/sports">
-                <button
-                  className={`btn btn-outline-success ${nameOfPath === 'sports' ? 'active' : ''}`}
-                  aria-current="page"
-                >
-                  Sports
-                </button>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/software">
-                <button
-                  className={`btn btn-outline-success ${nameOfPath === 'software' ? 'active' : ''}`}
-                  aria-current="page"
-                >
-                  Learning
-                </button>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/football-clubs">
-                <button 
-                  className={`btn btn-outline-success ${nameOfPath === 'football-clubs' ? 'active' : ''}`}
-                  aria-current="page"
-                >
-                  Football Clubs
-                </button>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/blog">
-                <button
-                  className={`btn btn-outline-success ${nameOfPath === 'blog' ? 'active' : ''}`}
-                  aria-current="page"
-                >
-                  Blog
-                </button>
-              </Link>
-            </li>
-          </ul>
+          <div class="navbar-nav w-100 justify-content-between me-auto mb-lg-0 align-items-center">
+            <div>
+              <li class="nav-item align-items-center px-2">
+                <Link to="/">
+                  <img 
+                    className='rounded-circle'
+                    src={images.logo}
+                    alt=''
+                    width={60}
+                    height={60}
+                  />
+                </Link>
+              </li>
+            </div>
+            <div className='d-flex justify-content-around col-6'>
+              <li className="nav-item">
+                <Link to="/sports">
+                  <button
+                    className={`btn text-primary ${nameOfPath === 'sports' ? 'active' : ''}`}
+                    aria-current="page"
+                  >
+                    <h4>Sports</h4>
+                  </button>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/software">
+                  <button
+                    className={`btn text-primary ${nameOfPath === 'software' ? 'active' : ''}`}
+                    aria-current="page"
+                  >
+                    <h4>Learning</h4>
+                  </button>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/football-clubs">
+                  <button 
+                    className={`btn text-primary ${nameOfPath === 'football-clubs' ? 'active' : ''}`}
+                    aria-current="page"
+                  >
+                    <h4>Football Clubs</h4>
+                  </button>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/blog">
+                  <button
+                    className={`btn text-primary ${nameOfPath === 'blog' ? 'active' : ''}`}
+                    aria-current="page"
+                  >
+                    <h4>Blog</h4>
+                  </button>
+                </Link>
+              </li>
+            </div>
+          </div>
+          {/* <ul class="navbar-nav w-100 justify-content-between me-auto mb-2 mb-lg-0 align-items-center"> */}
+            
+          {/* </ul> */}
         </div>
       </div>
     </nav>

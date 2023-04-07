@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Featured = () => {
   return (
-    <div class="container py-3 border-top border-2 mt-3">
+    <div class="container py-3 border-top mt-3">
       <h1 class="pb-2 d-flex justify-content-center text-primary">Our core features</h1>
       <p className='text-center'>We are made with the mind that youth and the community in general play an 
         essential part in the development of this country. 
