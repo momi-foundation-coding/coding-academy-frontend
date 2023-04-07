@@ -4,12 +4,12 @@ import { images } from '../../assets';
 
 const AboutUs = () => {
   return (
-    <div className='m-3'>
+    <div className='m-3 about-us'>
       <h1 className='text-center text-success m-3'>About Us</h1>
       <div className='d-flex justify-content-center'>
         <div className='col-md-5'>
           <img
-            src={images.youth}
+            src={images.AJP_0076}
             className="rounded img-responsive"
             alt=''
           />

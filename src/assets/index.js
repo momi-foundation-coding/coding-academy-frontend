@@ -9,6 +9,7 @@ import AJP_0003 from './AJP_0003.jpeg'
 import AJP_0004 from './AJP_0004.jpeg'
 import AJP_0009 from './AJP_0009.jpeg'
 import AJP_0068 from './AJP_0068.jpeg'
+import AJP_0076 from './AJP_0076.jpeg'
 import AJP_0077 from './AJP_0077.jpeg'
 import AJP_0106 from './AJP_0106.jpeg'
 import AJP_0178 from './AJP_0178.jpeg'
@@ -36,7 +37,8 @@ export const images = {
   AJP_0285,
   DJI_0003,
   DJI_0011,
-  AJP_0113
+  AJP_0113,
+  AJP_0076
 }
 
 

@@ -4,6 +4,7 @@ import TopSection from './top-section';
 import Featured from './featured';
 import AboutUs from './about-us';
 import Services from './services';
+import Stats from './stats';
 
 const HomeScreen = () => {
   return (
@@ -12,6 +13,7 @@ const HomeScreen = () => {
       <TopSection />
       <Featured />
       <AboutUs />
+      <Stats />
       <Services />
       <Footer />
     </div>
