@@ -264,7 +264,24 @@ export const teams = [
           "apperances": 0,
           "cleansheets": 0
         }
-      ]
-    }
+    ],
+    "fixtures": [
+      {
+        date: "2023-04-25",
+        field: 'Sinon, Kapsowar',
+        opponent: 'Kapchesewes' 
+      },
+      {
+        date: '2023-04-25',
+        field: 'Moi Girls Kapsowar, Kapsowar',
+        opponent: 'Kapsowar' 
+      },
+      {
+        date:'2023-04-25',
+        field: 'Chepkuta, Kapsowar',
+        opponent: 'Chelaite' 
+      }
+    ] 
+  }
 ]
 

@@ -3,27 +3,9 @@ import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import { images } from '../../assets';
 import Players from './players';
-import moment from 'moment';
 import Fixtures from './fixtures';
 import { useLocation } from 'react-router-dom';
 
-const fixtures = [
-  {
-    date: moment('2023-04-25').format('DD-MM-YYYY'),
-    field: 'Sinon, Kapsowar',
-    opponent: 'Kapchesewes' 
-  },
-  {
-    date: moment('2023-04-25').format('DD-MM-YYYY'),
-    field: 'Moi Girls Kapsowar, Kapsowar',
-    opponent: 'Kapsowar' 
-  },
-  {
-    date: moment('2023-04-25').format('DD-MM-YYYY'),
-    field: 'Chepkuta, Kapsowar',
-    opponent: 'Chelaite' 
-  }
-]
 
 const FootballClub = () => {
   const [tab, setTab] = useState('players')
@@ -105,7 +87,7 @@ const FootballClub = () => {
                 <Players players={data.squad}/>
               : 
               tab === 'fixtures' ?
-                <Fixtures fixtures={fixtures} currentTeam={data.name} />
+                <Fixtures fixtures={data.fixtures} currentTeam={data.name} />
               :
               <div></div>
             }
