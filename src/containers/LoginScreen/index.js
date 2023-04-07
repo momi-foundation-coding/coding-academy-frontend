@@ -11,7 +11,7 @@ const LoginScreen = () => {
       <NavBar />
       <div className="d-flex justify-content-center py-5">
         <form className='p-4 d-flex flex-column w-50 align-items-center'>
-          <img className="mb-4" src={images.logo} alt="" width="72" height="57" />
+          <img className="mb-4" src={images.logo} alt="" width="100" height="100" />
           <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
           <div className="w-50 form-floating mb-3">
             <input 
@@ -38,7 +38,7 @@ const LoginScreen = () => {
           </div>
           <Link to="/dashboard">
             <button
-              className="w-50 btn btn-lg btn-success"
+              className="btn btn-lg btn-success"
               type="submit"
             >
               Sign in
