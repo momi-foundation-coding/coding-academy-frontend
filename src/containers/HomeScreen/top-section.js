@@ -8,7 +8,7 @@ const TopSection = () => {
     >
       <div className='col-7'>
         <div className='d-flex flex-column align-items-center'>
-          <h1 className='align-self-center'>Momi Foundation</h1>
+          <h1 className='text-primary'>Momi Foundation</h1>
           <p className='w-75'>
             Momi foundation is a community-based organization that looks forward to empowering youth and 
             community through technology, talent, and education. 
@@ -16,7 +16,20 @@ const TopSection = () => {
             play an essential part in the development of this country. Moreover, technology, education, 
             and talent are 3 key factors to such development success. 
           </p>
-          <button type='button' className='btn btn-success'>Learn More</button>
+          <div className='d-flex'>
+            <button
+              type='button'
+              className='btn btn-success align-self-center m-3'
+            >
+              Look at Past and Future
+            </button>
+            <button
+              type='button' 
+              className='btn btn-warning text-white align-self-center m-3'
+            >
+              Support Our Vision & Mission
+            </button>
+          </div>
         </div>
       </div>
       <div className='col-md-5'>

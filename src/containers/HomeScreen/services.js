@@ -1,6 +1,5 @@
 import React from 'react'
 import { BsCode, BsBicycle, BsBook } from "react-icons/bs";
-import { Link } from 'react-router-dom';
 
 const Services = () => {
   return (
@@ -14,7 +13,25 @@ const Services = () => {
           <div class="card border border-white shadow p-2">
             <div class="row g-0">
               <div class="col-md-4">
-                <BsCode size={100} color="#43bdad" />
+                <BsBook size={100} color="#43bdad" />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-success">Education</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. 
+                    This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border border-white shadow p-2">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <BsBicycle size={100} color="#43bdad" />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -50,7 +67,7 @@ const Services = () => {
           <div class="card border border-white shadow p-2">
             <div class="row g-0">
               <div class="col-md-4">
-                <BsCode size={100} color="#43bdad" />
+                <BsBicycle size={100} color="#43bdad" />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
@@ -86,25 +103,7 @@ const Services = () => {
           <div class="card border border-white shadow p-2">
             <div class="row g-0">
               <div class="col-md-4">
-                <BsCode size={100} color="#43bdad" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title text-success">Education</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to additional content. 
-                    This content is a little bit longer.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card border border-white shadow p-2">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <BsCode size={100} color="#43bdad" />
+                <BsBook size={100} color="#43bdad" />
               </div>
               <div class="col-md-8">
                 <div class="card-body">
