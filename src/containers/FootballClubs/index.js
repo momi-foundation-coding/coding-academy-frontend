@@ -45,7 +45,7 @@ const FootballClubs = () => {
                         Learn more about {club.name}
                       </p>
                       <Link
-                        className='text-success border p-1'
+                        className='text-success p-2'
                         to={`/football-clubs/${club.name}`}
                       >
                         Club Profile <BsArrowRight />
