@@ -10,13 +10,14 @@ const FootballClubs = () => {
   const [type, setType] = useState('male')
   let maleTeams = []
   let femaleTeams = []
-  teams.map((team) => {
-    if(team.type === 'male') {
-      maleTeams.push(team)
-    } else if(team.type === 'female') {
-      femaleTeams.push(team)
-    }
-  })
+
+  teams.find((team) => (
+    team.type === 'male' 
+    ? maleTeams.push(team) 
+    : (team.type === 'female') 
+    ? femaleTeams.push(team)
+    : []
+  ))
 
   return (
     <div className=''>
