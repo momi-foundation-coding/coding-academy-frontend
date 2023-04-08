@@ -1,13 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
-import { BsArrowRight } from 'react-icons/bs';
 import { teams } from '../../db';
-import { images } from '../../assets';
+import FootbalClubProfileCard from './card';
 
 
 const FootballClubs = () => {
+  // filter teams based on gender
+  const [type, setType] = useState('male')
+  let maleTeams = []
+  let femaleTeams = []
+  teams.map((team) => {
+    if(team.type === 'male') {
+      maleTeams.push(team)
+    } else if(team.type === 'female') {
+      femaleTeams.push(team)
+    }
+  })
+
   return (
     <div className=''>
       <Navbar />
@@ -23,37 +33,44 @@ const FootballClubs = () => {
             </p>
           </div>
         </div>
+        <ul className="nav nav-tabs mb-3" id="ex1" role="tablist">
+          <li className="nav-item pt-2" role="presentation">
+            <div
+              className={`nav-link ${type === 'male' ? 'active text-secondary' : 'text-black' }`}
+              onClick={() => setType('male')}
+              role="button"
+            >
+              Male Football Teams
+            </div>
+          </li>
+          <li className="nav-item pt-2" role="presentation">
+            <div
+              className={`nav-link ${type === 'female' ? 'active text-secondary' : 'text-black' }`}
+              onClick={() => setType('female')}
+              role="button"
+            >
+              Female Football Teams
+            </div>
+          </li>
+        </ul>
         <div className="d-flex justify-content-start row mb-2">
           {
-            teams.map((club) => {
-              return (
-                <div key={club.name} className="col-md-3">
-                  <div className="card mb-3">
-                    <img
-                      src={club.logo || images.DJI_0011} 
-                      className="card-img-top" 
-                      alt="" 
-                      height={150} 
-                      width={300} 
-                    />
-                    <div className="card-body">
-                      <h5 className="card-title text-secondary">{club.name}</h5>
-                      <p className="card-text">
-                        The Club is called {club.name} and its foundation is in {club.name}.
-                        Learn more about {club.name}
-                      </p>
-                      <Link
-                        className='text-success p-2'
-                        to={`/football-clubs/${club.name}`}
-                        state={club}
-                      >
-                        Club Profile <BsArrowRight />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              )
-            })
+            type === 'male' 
+            ? 
+              maleTeams.map(club => {
+                return (
+                  <FootbalClubProfileCard club={club} key={club.name} />
+                )
+              })
+            :
+            type === 'female'
+            ? 
+              femaleTeams.map(club => {
+                return (
+                  <FootbalClubProfileCard club={club} key={club.name}/>
+                )
+              })
+            : <div></div>
           }
         </div>
       </div>

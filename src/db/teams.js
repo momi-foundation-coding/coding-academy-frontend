@@ -581,6 +581,7 @@ const teams = [
   {
     "name": "Chalaite Fc",
     "formation": "4-3-3",
+    "type": "male",
     "squad": [
       {
         "name": "Obadiah Kimutai",
