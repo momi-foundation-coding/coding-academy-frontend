@@ -19,6 +19,7 @@ import AJP_0285 from './AJP_0285.jpeg'
 import AJP_0113 from './AJP_0113.jpeg'
 import DJI_0003 from './DJI_0003.jpeg'
 import DJI_0011 from './DJI_0011.jpeg'
+import avatar from './avatar.png'
 
 export const images = {
   elders,
@@ -38,7 +39,8 @@ export const images = {
   DJI_0003,
   DJI_0011,
   AJP_0113,
-  AJP_0076
+  AJP_0076,
+  avatar
 }
 
 

@@ -7,7 +7,7 @@ const Players = ({ players }) => {
   return (
     <div className="row row-cols-1 row-cols-md-4 g-4">
       {
-        players.map((player, index) => {
+        players && players.map((player, index) => {
           const age =  moment().diff(player.DOB, 'years');
           return (
             <div  
@@ -23,8 +23,9 @@ const Players = ({ players }) => {
                     <p className='lh-1'>{age} Years</p>
                   </div>
                   <img
-                    src={images.AJP_0077}
-                    width={100}
+                    src={player.profilePicture || images.avatar}
+                    width={80}
+                    height={80}
                     className="rounded-circle"
                     alt={`Player ${player.name}`}
                   />

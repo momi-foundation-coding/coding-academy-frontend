@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../components/navbar';
 import Footer from '../../components/footer';
 import { BsArrowRight } from 'react-icons/bs';
-import { teams } from '../../db'
+import { teams } from '../../db';
+import { images } from '../../assets';
 
 
 const FootballClubs = () => {
@@ -22,21 +23,21 @@ const FootballClubs = () => {
             </p>
           </div>
         </div>
-        <div className="d-flex justify-content-around row mb-2">
+        <div className="d-flex justify-content-start row mb-2">
           {
             teams.map((club) => {
               return (
                 <div key={club.name} className="col-md-3">
                   <div className="card mb-3">
                     <img
-                      src={club.logo} 
+                      src={club.logo || images.DJI_0011} 
                       className="card-img-top" 
                       alt="" 
                       height={150} 
                       width={300} 
                     />
                     <div className="card-body">
-                      <h5 className="card-title">{club.name}</h5>
+                      <h5 className="card-title text-secondary">{club.name}</h5>
                       <p className="card-text">
                         The Club is called {club.name} and its foundation is in {club.name}.
                         Learn more about {club.name}
